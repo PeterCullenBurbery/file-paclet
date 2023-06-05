@@ -1,0 +1,1689 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     82547,       1681]
+NotebookOptionsPosition[     78739,       1614]
+NotebookOutlinePosition[     79157,       1630]
+CellTagsIndexPosition[     79114,       1627]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Set the directory:", "Text",
+ CellChangeTimes->{{3.8949974666095285`*^9, 
+  3.8949974701115093`*^9}},ExpressionUUID->"caf1dbf4-ba4d-45eb-b4de-\
+c68c1cc9709c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  "\"\<C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\file-paclet\\\\FileUtilities\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.894997423751176*^9, 3.8949974525213842`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"e44e9612-5d9d-4505-961d-a9d97e14eeee"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\file-paclet\\\\FileUtilities\"\>"], "Output",
+ CellChangeTimes->{3.8949974533151417`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"10b05db0-76f4-4b5f-8ee9-0a624c8d24ee"]
+}, Open  ]],
+
+Cell["The directory:", "Text",
+ CellChangeTimes->{{3.894997472698087*^9, 
+  3.894997474638653*^9}},ExpressionUUID->"d15f9f8f-3f11-46ae-82a7-\
+58edebb72f0a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.894997454548405*^9, 3.8949974570211554`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"4f6f0c47-cd92-4516-b089-d861e69e8ffc"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\file-paclet\\\\FileUtilities\"\>"], "Output",
+ CellChangeTimes->{3.8949974573239293`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"675dd146-c338-4d98-86b8-0cde22253a2e"]
+}, Open  ]],
+
+Cell["The directory file:", "Text",
+ CellChangeTimes->{{3.89499747747008*^9, 
+  3.894997484938696*^9}},ExpressionUUID->"65c9d3e1-9f78-4da8-b46f-\
+1a9a162fe194"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"File", "[", 
+  RowBox[{"Directory", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.894997485612944*^9, 3.89499748643137*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"2d817b30-60c3-4c04-b89c-866e1df1bbef"],
+
+Cell[BoxData[
+ RowBox[{"File", "[", 
+  TemplateBox[{
+   "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\file-paclet\\\\FileUtilities\""},
+   "FileArgument"], "]"}]], "Output",
+ CellChangeTimes->{3.894997486737377*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"3801560b-d704-4ae7-8c86-4e012fa4fae9"]
+}, Open  ]],
+
+Cell["Information for the directory file:", "Text",
+ CellChangeTimes->{{3.894997490341037*^9, 
+  3.8949974949529595`*^9}},ExpressionUUID->"a9d0a9fb-486b-4b05-b65c-\
+a69cc11f3571"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Information", "[", 
+  RowBox[{"File", "[", 
+   RowBox[{"Directory", "[", "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8949974956298275`*^9, 3.89499749721989*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"c454856c-8a5b-4f27-8139-771c5c141f1d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    TagBox[GridBox[{
+       {
+        ItemBox[
+         PaneBox[
+          StyleBox["\<\" File\"\>", "InformationTitleText",
+           StripOnInput->False],
+          FrameMargins->{{4, 0}, {-1, 1}}],
+         BaseStyle->"InformationTitleBackground",
+         StripOnInput->False]},
+       {
+        PaneBox[GridBox[{
+           {
+            
+            DynamicModuleBox[{System`InformationDump`open$$ = {
+             False, False, False, False, False, False, False, False, False, 
+              False, False, False, False, False, False, False, False, False, 
+              False, False, False, False, False, False, False, False, False, 
+              False, False, False, False, False, False, False, False, False, 
+              False, False, False, False, False, False, False}}, 
+             StyleBox[GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" File Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"FileName\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "FileName", 
+                   "Tooltip"]& ], "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - \
+Marshall University\\\\GitHub\\\\file-paclet\\\\FileUtilities\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Directory Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"DirectoryName\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "DirectoryName", 
+                   "Tooltip"]& ], "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - \
+Marshall University\\\\GitHub\\\\file-paclet\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   
+                   StyleBox["\<\" Absolute File Name\"\>", 
+                    "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"AbsoluteFileName\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "AbsoluteFileName", 
+                   "Tooltip"]& ], "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - \
+Marshall University\\\\GitHub\\\\file-paclet\\\\FileUtilities\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   
+                   StyleBox["\<\" Absolute Short File Name\"\>", 
+                    "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"AbsoluteShortFileName\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "AbsoluteShortFileName", 
+                   "Tooltip"]& ], \
+"\<\"C:\\\\Users\\\\Peter\\\\ONEDRI~1\\\\GitHub\\\\FILE-P~1\\\\FILEUT~1\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Short File Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"ShortFileName\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "ShortFileName", 
+                   "Tooltip"]& ], \
+"\<\"C:\\\\Users\\\\Peter\\\\ONEDRI~1\\\\GitHub\\\\FILE-P~1\\\\FILEUT~1\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" File Base Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"FileBaseName\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "FileBaseName", 
+                   "Tooltip"]& ], "\<\"FileUtilities\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" File Extension\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"FileExtension\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "FileExtension", "Tooltip"]& ], "\<\"\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Creation Date\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"CreationDate\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "CreationDate", "Tooltip"]& ], 
+                 TemplateBox[{
+                   RowBox[{"\"Mon 5 Jun 2023 19:43:54\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                   RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "2023", ",", "6", ",", "5", ",", "19", ",", "43", ",", 
+                    "54.`"}], "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"",
+                     ",", 
+                    RowBox[{"-", "4.`"}]}], "]"}]},
+                  "DateObject",
+                  Editable->False]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Last Access Date\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"LastAccessDate\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "LastAccessDate", "Tooltip"]& ], 
+                 TemplateBox[{
+                   RowBox[{"\"Mon 5 Jun 2023 19:43:54\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                   RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "2023", ",", "6", ",", "5", ",", "19", ",", "43", ",", 
+                    "54.`"}], "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"",
+                     ",", 
+                    RowBox[{"-", "4.`"}]}], "]"}]},
+                  "DateObject",
+                  Editable->False]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   
+                   StyleBox["\<\" Last Modification Date\"\>", 
+                    "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"LastModificationDate\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "LastModificationDate", "Tooltip"]& ], 
+                 TemplateBox[{
+                   RowBox[{"\"Mon 5 Jun 2023 19:43:54\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                   RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "2023", ",", "6", ",", "5", ",", "19", ",", "43", ",", 
+                    "54.`"}], "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"",
+                     ",", 
+                    RowBox[{"-", "4.`"}]}], "]"}]},
+                  "DateObject",
+                  Editable->False]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" File Type\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"FileType\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "FileType", 
+                   "Tooltip"]& ], "\<\"Directory\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Byte Count\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"ByteCount\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "ByteCount", "Tooltip"]& ], "0"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Raw Byte Count\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"RawByteCount\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "RawByteCount", "Tooltip"]& ], "0"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Block Count\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"BlockCount\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "BlockCount", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Block Size\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"BlockSize\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "BlockSize", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Owner Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"OwnerName\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "OwnerName", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Group Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"GroupName\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "GroupName", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Read Only\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"ReadOnly\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "ReadOnly", "Tooltip"]& ], "False"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Archive\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Archive\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Archive", "Tooltip"]& ], "False"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Hidden\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Hidden\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Hidden", "Tooltip"]& ], "False"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" System\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"System\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "System", "Tooltip"]& ], "False"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Compressed\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Compressed\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Compressed", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Encrypted\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Encrypted\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Encrypted", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" File Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"FileAttributes\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "FileAttributes", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Offline\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Offline\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Offline", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Reparse Point\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"ReparsePoint\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "ReparsePoint", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Sparse\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Sparse\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Sparse", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Temporary\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Temporary\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Temporary", "Tooltip"]& ], 
+                 RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}
+               },
+               AutoDelete->False,
+               GridBoxAlignment->{"Columns" -> {Right, Left}},
+               GridBoxDividers->None,
+               GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                   Offset[0.27999999999999997`]}, "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.8]}, 
+                   Offset[0.2]}}], "DialogStyle",
+              StripOnInput->False],
+             DynamicModuleValues:>{}]}
+          },
+          DefaultBaseStyle->"Column",
+          GridBoxAlignment->{"Columns" -> {{Left}}},
+          GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+          
+          GridBoxItemSize->{
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "Rows" -> {
+              Offset[0.2], {
+               Offset[3.6]}, 
+              Offset[0.2]}}],
+         FrameMargins->6]}
+      },
+      DefaultBaseStyle->"Column",
+      FrameStyle->Directive[
+        GrayLevel[0.8], 
+        Thickness[Tiny]],
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxDividers->{
+       "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     "Column"],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "File", "FileName" -> 
+    "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\GitHub\\file-paclet\\FileUtilities", "DirectoryName" -> 
+    "C:\\Users\\Peter\\OneDrive - Marshall University\\GitHub\\file-paclet", 
+    "AbsoluteFileName" -> 
+    "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\GitHub\\file-paclet\\FileUtilities", "AbsoluteShortFileName" -> 
+    "C:\\Users\\Peter\\ONEDRI~1\\GitHub\\FILE-P~1\\FILEUT~1", "ShortFileName" -> 
+    "C:\\Users\\Peter\\ONEDRI~1\\GitHub\\FILE-P~1\\FILEUT~1", "FileBaseName" -> 
+    "FileUtilities", "FileExtension" -> "", "CreationDate" -> 
+    DateObject[{2023, 6, 5, 19, 43, 54.}, "Instant", "Gregorian", -4.], 
+    "LastAccessDate" -> 
+    DateObject[{2023, 6, 5, 19, 43, 54.}, "Instant", "Gregorian", -4.], 
+    "LastChangeDate" -> Missing["NotApplicable"], "LastModificationDate" -> 
+    DateObject[{2023, 6, 5, 19, 43, 54.}, "Instant", "Gregorian", -4.], 
+    "FileType" -> "Directory", "ByteCount" -> 0, "RawByteCount" -> 0, 
+    "BlockCount" -> Missing["NotAvailable"], "BlockSize" -> 
+    Missing["NotAvailable"], "FileAssociation" -> None, "Permissions" -> 
+    Missing["NotApplicable"], "UnixPermissionsCode" -> 
+    Missing["NotApplicable"], "UnixPermissionsString" -> 
+    Missing["NotApplicable"], "Device" -> Missing["NotApplicable"], "Inode" -> 
+    Missing["NotApplicable"], "LinkCount" -> Missing["NotApplicable"], "UID" -> 
+    Missing["NotApplicable"], "GID" -> Missing["NotApplicable"], "SID" -> 
+    Missing["NotApplicable"], "OwnerName" -> Missing["NotAvailable"], 
+    "GroupName" -> Missing["NotAvailable"], "SetGroupID" -> 
+    Missing["NotApplicable"], "SetUserID" -> Missing["NotApplicable"], 
+    "Sticky" -> Missing["NotApplicable"], "ReadOnly" -> False, "Archive" -> 
+    False, "Hidden" -> False, "System" -> False, "Compressed" -> 
+    Missing["NotAvailable"], "Encrypted" -> Missing["NotAvailable"], 
+    "FileAttributes" -> Missing["NotAvailable"], "Offline" -> 
+    Missing["NotAvailable"], "ReparsePoint" -> Missing["NotAvailable"], 
+    "Sparse" -> Missing["NotAvailable"], "Temporary" -> 
+    Missing["NotAvailable"]|>, True]]], "Output",
+ CellChangeTimes->{3.894997497542361*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"b5cc2b7b-01cd-436e-b97a-5708e39b8fbc"]
+}, Open  ]],
+
+Cell["\<\
+Use the CreatePaclet function to create the initial content for your paclet. \
+Begin by evaluating the following statements to load PacletTools and create \
+your new paclet:\
+\>", "Text",
+ CellChangeTimes->{
+  3.8949975275701776`*^9},ExpressionUUID->"d73bb166-d4af-483d-b49c-\
+7164fc0b004a"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PacletTools`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8949974044497757`*^9, 3.8949974077752*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"3db11e88-f62e-4fbb-91b1-f38a89dbb32e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"obj", "=", 
+  RowBox[{"CreatePaclet", "[", 
+   RowBox[{"\"\<FileUtilities\>\"", ",", 
+    RowBox[{"Directory", "[", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.894997408750939*^9, 3.8949974226949787`*^9}, {
+  3.894997549841953*^9, 3.894997555665589*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"cf02a4ae-6464-4397-95d8-13cf9767b3c6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["PacletObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.0416667], {
+               FaceForm[{
+                 RGBColor[0.961, 0.961, 0.961], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.5454, 
+                22.5972}, {7.5464, 20.5002}, {2.5454, 18.4022}, {2.5454, 
+                12.5982}, {2.5454, 12.5972}, {2.5454, 6.7952}, {7.5454, 
+                4.6962}, {7.546, 4.6972}, {12.5454, 2.5992}, {17.5454, 
+                4.6972}, {17.5454, 4.6962}, {22.5454, 6.7952}, {22.5454, 
+                12.5972}, {22.5454, 12.5982}, {22.5454, 18.4022}}}]}, {
+               FaceForm[{
+                 RGBColor[0.898, 0.898, 0.898], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{17.125, 8.3359}, {17.125, 
+                14.0569}, {16.875, 14.0569}, {16.875, 8.3359}, {17., 
+                8.1169}, {21.952, 6.0399}, {22.049, 6.2709}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{7.125, 8.3359}, {7.125, 14.0569}, {
+                6.875, 14.0569}, {6.875, 8.3359}, {1.952, 6.2709}, {2.048, 
+                6.0399}, {7., 8.1169}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.8745, 6.2383}, {6.9515, 4.1733}, {7.0475, 
+                3.9423}, {11.9995, 6.0193}, {16.9515, 3.9423}, {17.0475, 
+                4.1733}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{17.125, 14.1392}, {17.125, 
+                19.8602}, {16.875, 19.8602}, {16.875, 14.1392}, {17., 
+                13.9202}, {21.952, 11.8432}, {22.049, 12.0742}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{7.125, 14.1392}, {7.125, 19.8602}, {
+                6.875, 19.8602}, {6.875, 14.1392}, {1.952, 12.0742}, {2.048, 
+                11.8432}, {7., 13.9202}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.8746, 21.3633}, {11.8746, 18.3563}, {
+                11.9996, 18.3033}, {12.1246, 18.3563}, {12.1246, 21.3633}, {
+                11.9996, 21.4153}}}]}, {
+               FaceForm[{
+                 RGBColor[0.749, 0.749, 0.749], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                 3}}}, {{{8.292, 19.8594}, {12., 21.4154}, {15.707, 
+                 19.8594}, {12., 18.3034}}, {{17.5, 19.5274}, {17.5, 
+                 20.1924}, {12., 22.5004}, {6.5, 20.1924}, {6.5, 19.5284}, {
+                 12., 17.2194}, {12., 17.2194}, {15.7, 18.7724}, {17.5, 
+                 19.5274}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.5, 8.5156}, {11.5, 6.4876}, {11.5, 
+                5.4026}, {12.5, 5.8226}, {12.5, 8.5156}, {12., 8.3056}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}}}, {{{21.5, 6.4873}, {17.5, 4.8083}, {17.5, 
+                 9.5283}, {21.5, 11.2073}}, {{21.5, 12.7113}, {21.5, 
+                 12.2913}, {17., 10.4033}, {16.5, 10.6133}, {16.5, 10.1943}, {
+                 15.707, 9.8613}, {16.5, 9.5283}, {16.5, 4.8083}, {16.5, 
+                 4.8093}, {16.5, 4.3903}, {15.707, 4.0573}, {17., 3.5143}, {
+                 22.5, 5.8223}, {22.5, 12.2913}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}}}, {{{6.5, 4.8086}, {2.5, 6.4876}, {2.5, 
+                 11.2066}, {6.5, 9.5286}}, {{7.5, 9.1096}, {7.5, 9.1096}, {
+                 7.5, 9.5286}, {8.292, 9.8616}, {7.5, 10.1936}, {7.5, 
+                 10.6136}, {7., 10.4036}, {2.5, 12.2906}, {2.5, 12.7106}, {
+                 1.5, 12.2916}, {1.5, 5.8226}, {7., 3.5146}, {8.293, 
+                 4.0576}, {7.5, 4.3906}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{3.2925, 17.7622}, {7.0005, 
+                 19.3182}, {10.7075, 17.7622}, {7.0005, 16.2062}}, {{6.5005, 
+                 10.6122}, {2.5005, 12.2912}, {2.5005, 17.0102}, {6.5005, 
+                 15.3322}}, {{7.5005, 10.1932}, {7.5005, 10.6122}, {7.5005, 
+                 15.3322}, {12.0005, 17.2202}, {12.5005, 17.0102}, {12.5005, 
+                 18.0952}, {7.0005, 20.4032}, {1.5005, 18.0952}, {1.5005, 
+                 11.6262}, {7.0005, 9.3182}, {8.2935, 9.8612}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{21.5, 12.291}, {17.5, 10.612}, {
+                 17.5, 15.332}, {21.5, 17.01}}, {{13.293, 17.762}, {17., 
+                 19.318}, {20.708, 17.762}, {17., 16.207}}, {{17., 20.403}, {
+                 11.5, 18.095}, {11.5, 17.01}, {12., 17.22}, {16.5, 15.332}, {
+                 16.5, 10.612}, {16.5, 10.194}, {15.706, 9.861}, {17., 
+                 9.318}, {22.5, 11.626}, {22.5, 18.095}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{16.4995, 4.3906}, {12.4995, 
+                 2.7116}, {12.4995, 7.4316}, {16.4995, 9.1096}}, {{11.4995, 
+                 2.7116}, {7.4995, 4.3906}, {7.4995, 9.1096}, {11.4995, 
+                 7.4316}}, {{16.4995, 10.6136}, {16.4995, 10.1946}, {11.9995, 
+                 8.3056}, {8.2915, 9.8616}, {7.4995, 10.1936}, {7.4995, 
+                 10.6146}, {6.4995, 10.1946}, {6.4995, 3.7256}, {11.9995, 
+                 1.4176}, {17.4995, 3.7256}, {17.4995, 10.1946}}}]}, {
+               FaceForm[{
+                 RGBColor[0.965, 0.765, 0.749], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{12., 17.6616}, {16.945, 15.5856}, {16.945, 
+                9.9376}, {12., 7.8636}, {7.055, 9.9376}, {7.055, 
+                15.5856}}}]}, {
+               FaceForm[{
+                 RGBColor[0.91, 0.655, 0.635], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.125, 
+                17.7627}, {11.875, 17.7627}, {11.875, 12.0407}, {6.952, 
+                9.9757}, {7.048, 9.7447}, {12., 11.8227}, {16.952, 9.7447}, {
+                17.048, 9.9757}, {12.125, 12.0407}}}]}, {
+               FaceForm[{
+                 RGBColor[0.867, 0.067, 0.], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}}}, {{{12.5, 8.5146}, {12.5, 13.2336}, {16.5, 14.9116}, {
+                 16.5, 10.1926}}, {{7.5, 14.9116}, {11.5, 13.2336}, {11.5, 
+                 8.5146}, {7.5, 10.1926}}, {{15.708, 15.6636}, {12., 
+                 14.1086}, {8.292, 15.6636}, {12., 17.2206}}, {{12., 
+                 18.3046}, {6.5, 15.9956}, {6.5, 9.5286}, {12., 7.2206}, {
+                 17.5, 9.5286}, {17.5, 15.9956}}}]}}, AspectRatio -> 
+             Automatic, ImageSize -> {24., 24.}, 
+             PlotRange -> {{0., 24.}, {0., 24.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"FileUtilities\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"0.0.1\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.0416667], {
+               FaceForm[{
+                 RGBColor[0.961, 0.961, 0.961], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.5454, 
+                22.5972}, {7.5464, 20.5002}, {2.5454, 18.4022}, {2.5454, 
+                12.5982}, {2.5454, 12.5972}, {2.5454, 6.7952}, {7.5454, 
+                4.6962}, {7.546, 4.6972}, {12.5454, 2.5992}, {17.5454, 
+                4.6972}, {17.5454, 4.6962}, {22.5454, 6.7952}, {22.5454, 
+                12.5972}, {22.5454, 12.5982}, {22.5454, 18.4022}}}]}, {
+               FaceForm[{
+                 RGBColor[0.898, 0.898, 0.898], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{17.125, 8.3359}, {17.125, 
+                14.0569}, {16.875, 14.0569}, {16.875, 8.3359}, {17., 
+                8.1169}, {21.952, 6.0399}, {22.049, 6.2709}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{7.125, 8.3359}, {7.125, 14.0569}, {
+                6.875, 14.0569}, {6.875, 8.3359}, {1.952, 6.2709}, {2.048, 
+                6.0399}, {7., 8.1169}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.8745, 6.2383}, {6.9515, 4.1733}, {7.0475, 
+                3.9423}, {11.9995, 6.0193}, {16.9515, 3.9423}, {17.0475, 
+                4.1733}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{17.125, 14.1392}, {17.125, 
+                19.8602}, {16.875, 19.8602}, {16.875, 14.1392}, {17., 
+                13.9202}, {21.952, 11.8432}, {22.049, 12.0742}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{7.125, 14.1392}, {7.125, 19.8602}, {
+                6.875, 19.8602}, {6.875, 14.1392}, {1.952, 12.0742}, {2.048, 
+                11.8432}, {7., 13.9202}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.8746, 21.3633}, {11.8746, 18.3563}, {
+                11.9996, 18.3033}, {12.1246, 18.3563}, {12.1246, 21.3633}, {
+                11.9996, 21.4153}}}]}, {
+               FaceForm[{
+                 RGBColor[0.749, 0.749, 0.749], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                 3}}}, {{{8.292, 19.8594}, {12., 21.4154}, {15.707, 
+                 19.8594}, {12., 18.3034}}, {{17.5, 19.5274}, {17.5, 
+                 20.1924}, {12., 22.5004}, {6.5, 20.1924}, {6.5, 19.5284}, {
+                 12., 17.2194}, {12., 17.2194}, {15.7, 18.7724}, {17.5, 
+                 19.5274}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.5, 8.5156}, {11.5, 6.4876}, {11.5, 
+                5.4026}, {12.5, 5.8226}, {12.5, 8.5156}, {12., 8.3056}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}}}, {{{21.5, 6.4873}, {17.5, 4.8083}, {17.5, 
+                 9.5283}, {21.5, 11.2073}}, {{21.5, 12.7113}, {21.5, 
+                 12.2913}, {17., 10.4033}, {16.5, 10.6133}, {16.5, 10.1943}, {
+                 15.707, 9.8613}, {16.5, 9.5283}, {16.5, 4.8083}, {16.5, 
+                 4.8093}, {16.5, 4.3903}, {15.707, 4.0573}, {17., 3.5143}, {
+                 22.5, 5.8223}, {22.5, 12.2913}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}}}, {{{6.5, 4.8086}, {2.5, 6.4876}, {2.5, 
+                 11.2066}, {6.5, 9.5286}}, {{7.5, 9.1096}, {7.5, 9.1096}, {
+                 7.5, 9.5286}, {8.292, 9.8616}, {7.5, 10.1936}, {7.5, 
+                 10.6136}, {7., 10.4036}, {2.5, 12.2906}, {2.5, 12.7106}, {
+                 1.5, 12.2916}, {1.5, 5.8226}, {7., 3.5146}, {8.293, 
+                 4.0576}, {7.5, 4.3906}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{3.2925, 17.7622}, {7.0005, 
+                 19.3182}, {10.7075, 17.7622}, {7.0005, 16.2062}}, {{6.5005, 
+                 10.6122}, {2.5005, 12.2912}, {2.5005, 17.0102}, {6.5005, 
+                 15.3322}}, {{7.5005, 10.1932}, {7.5005, 10.6122}, {7.5005, 
+                 15.3322}, {12.0005, 17.2202}, {12.5005, 17.0102}, {12.5005, 
+                 18.0952}, {7.0005, 20.4032}, {1.5005, 18.0952}, {1.5005, 
+                 11.6262}, {7.0005, 9.3182}, {8.2935, 9.8612}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{21.5, 12.291}, {17.5, 10.612}, {
+                 17.5, 15.332}, {21.5, 17.01}}, {{13.293, 17.762}, {17., 
+                 19.318}, {20.708, 17.762}, {17., 16.207}}, {{17., 20.403}, {
+                 11.5, 18.095}, {11.5, 17.01}, {12., 17.22}, {16.5, 15.332}, {
+                 16.5, 10.612}, {16.5, 10.194}, {15.706, 9.861}, {17., 
+                 9.318}, {22.5, 11.626}, {22.5, 18.095}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{16.4995, 4.3906}, {12.4995, 
+                 2.7116}, {12.4995, 7.4316}, {16.4995, 9.1096}}, {{11.4995, 
+                 2.7116}, {7.4995, 4.3906}, {7.4995, 9.1096}, {11.4995, 
+                 7.4316}}, {{16.4995, 10.6136}, {16.4995, 10.1946}, {11.9995, 
+                 8.3056}, {8.2915, 9.8616}, {7.4995, 10.1936}, {7.4995, 
+                 10.6146}, {6.4995, 10.1946}, {6.4995, 3.7256}, {11.9995, 
+                 1.4176}, {17.4995, 3.7256}, {17.4995, 10.1946}}}]}, {
+               FaceForm[{
+                 RGBColor[0.965, 0.765, 0.749], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{12., 17.6616}, {16.945, 15.5856}, {16.945, 
+                9.9376}, {12., 7.8636}, {7.055, 9.9376}, {7.055, 
+                15.5856}}}]}, {
+               FaceForm[{
+                 RGBColor[0.91, 0.655, 0.635], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.125, 
+                17.7627}, {11.875, 17.7627}, {11.875, 12.0407}, {6.952, 
+                9.9757}, {7.048, 9.7447}, {12., 11.8227}, {16.952, 9.7447}, {
+                17.048, 9.9757}, {12.125, 12.0407}}}]}, {
+               FaceForm[{
+                 RGBColor[0.867, 0.067, 0.], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}}}, {{{12.5, 8.5146}, {12.5, 13.2336}, {16.5, 14.9116}, {
+                 16.5, 10.1926}}, {{7.5, 14.9116}, {11.5, 13.2336}, {11.5, 
+                 8.5146}, {7.5, 10.1926}}, {{15.708, 15.6636}, {12., 
+                 14.1086}, {8.292, 15.6636}, {12., 17.2206}}, {{12., 
+                 18.3046}, {6.5, 15.9956}, {6.5, 9.5286}, {12., 7.2206}, {
+                 17.5, 9.5286}, {17.5, 15.9956}}}]}}, AspectRatio -> 
+             Automatic, ImageSize -> {24., 24.}, 
+             PlotRange -> {{0., 24.}, {0., 24.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"FileUtilities\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"0.0.1\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Location: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\file-paclet\\\\FileUtilities\\\\FileUtilities\"", 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Description: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"Missing", "[", "\"NotAvailable\"", "]"}], Short], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  PacletObject[<|
+   "Name" -> "FileUtilities", "Version" -> "0.0.1", "WolframVersion" -> 
+    "13.3+", "Extensions" -> {{
+      "Kernel", "Root" -> "Kernel", "Context" -> "FileUtilities`"}, {
+      "Documentation", "Language" -> "English"}}, "Location" -> 
+    "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\GitHub\\file-paclet\\FileUtilities\\FileUtilities"|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.8949975508398438`*^9, 3.8949975584598813`*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"c5ba4a27-78b5-49a0-ad58-63086dc6b62f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Information", "[", "obj", "]"}]], "Input",
+ CellChangeTimes->{{3.89499757238698*^9, 3.8949975766602364`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"60cc635f-7913-4581-a7af-5130da1a75a4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    TagBox[GridBox[{
+       {
+        ItemBox[
+         PaneBox[
+          StyleBox["\<\" Paclet\"\>", "InformationTitleText",
+           StripOnInput->False],
+          FrameMargins->{{4, 0}, {-1, 1}}],
+         BaseStyle->"InformationTitleBackground",
+         StripOnInput->False]},
+       {
+        PaneBox[GridBox[{
+           {
+            
+            DynamicModuleBox[{System`InformationDump`open$$ = {
+             False, False, False, False, False, False, False, False, False, 
+              False, False}}, 
+             StyleBox[GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Name\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "Name", 
+                   "Tooltip"]& ], "\<\"FileUtilities\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Version\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Version\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Version", "Tooltip"]& ], "\<\"0.0.1\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Wolfram Version\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"WolframVersion\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "WolframVersion", 
+                   "Tooltip"]& ], "\<\"13.3+\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Qualifier\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Qualifier\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Qualifier", "Tooltip"]& ], "\<\"\"\>"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" System ID\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"SystemID\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "SystemID", "Tooltip"]& ], "All"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Context\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Context\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Context", "Tooltip"]& ], 
+                 RowBox[{"{", "\<\"FileUtilities`\"\>", "}"}]},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Loading\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Loading\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Loading", "Tooltip"]& ], "Manual"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Auto Updating\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"AutoUpdating\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "AutoUpdating", "Tooltip"]& ], "False"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Enabled\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Enabled\"",
+                   TooltipStyle->"TextStyling"],
+                  Annotation[#, "Enabled", "Tooltip"]& ], "True"},
+                {
+                 TagBox[
+                  TooltipBox[
+                   StyleBox["\<\" Location\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                   "\"Location\"",
+                   TooltipStyle->"TextStyling"],
+                  
+                  Annotation[#, "Location", 
+                   "Tooltip"]& ], "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - \
+Marshall University\\\\GitHub\\\\file-paclet\\\\FileUtilities\\\\\
+FileUtilities\"\>"}
+               },
+               AutoDelete->False,
+               GridBoxAlignment->{"Columns" -> {Right, Left}},
+               GridBoxDividers->None,
+               GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                   Offset[0.27999999999999997`]}, "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.8]}, 
+                   Offset[0.2]}}], "DialogStyle",
+              StripOnInput->False],
+             DynamicModuleValues:>{}]}
+          },
+          DefaultBaseStyle->"Column",
+          GridBoxAlignment->{"Columns" -> {{Left}}},
+          GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+          
+          GridBoxItemSize->{
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "Rows" -> {
+              Offset[0.2], {
+               Offset[3.6]}, 
+              Offset[0.2]}}],
+         FrameMargins->6]}
+      },
+      DefaultBaseStyle->"Column",
+      FrameStyle->Directive[
+        GrayLevel[0.8], 
+        Thickness[Tiny]],
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxDividers->{
+       "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     "Column"],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Paclet", "Name" -> "FileUtilities", "Version" -> "0.0.1", 
+    "WolframVersion" -> "13.3+", "Qualifier" -> "", "SystemID" -> All, 
+    "Context" -> {"FileUtilities`"}, "Loading" -> Manual, "AutoUpdating" -> 
+    False, "Enabled" -> True, "Location" -> 
+    "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\GitHub\\file-paclet\\FileUtilities\\FileUtilities"|>, 
+   True]]], "Output",
+ CellChangeTimes->{3.8949975769733863`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"3ae36cb7-92bb-4c5c-ae93-09f0dafd218f"]
+}, Open  ]],
+
+Cell["\<\
+To view the files in your new paclet in your operating system\
+\[CloseCurlyQuote]s file browser application, evaluate the following:\
+\>", "Text",
+ CellChangeTimes->{
+  3.894997592117772*^9},ExpressionUUID->"44dff4bb-912d-4ac1-8fac-\
+c3f1e5e3910d"],
+
+Cell[BoxData[
+ RowBox[{"SystemOpen", "[", 
+  RowBox[{"obj", "[", "\"\<Location\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.89499756168124*^9, 3.894997566915262*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"b4595bb9-645e-4aaf-9a01-1c3de12f73a7"],
+
+Cell["\<\
+Note that although the new paclet was created by using CreatePaclet, the \
+system is not yet aware of the paclet:\
+\>", "Text",
+ CellChangeTimes->{
+  3.8949976088309207`*^9},ExpressionUUID->"0f3714e5-fd96-43f2-b71e-\
+ff91c3b07da7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PacletFind", "[", "\"\<FileUtilities\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8949975987553463`*^9, 3.894997610383082*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"f6d3a75c-70bd-465a-b565-26ad4a625b7d"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.8949976032169533`*^9, 3.89499761082403*^9}},
+ CellLabel->"Out[15]=",ExpressionUUID->"5200f8eb-2ea3-4099-b4d3-d297bf7260ae"]
+}, Open  ]],
+
+Cell["\<\
+Later on, you will use PacletInstall to install the finished paclet for use \
+in future sessions, but during development, you can temporarily tell the \
+system about the paclet using PacletDirectoryLoad:\
+\>", "Text",
+ CellChangeTimes->{
+  3.894997615531639*^9},ExpressionUUID->"4cfb8370-63f0-488e-aa7d-\
+94511f20b496"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PacletDirectoryLoad", "[", 
+  RowBox[{"obj", "[", "\"\<Location\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8949976169606357`*^9, 3.8949976233301215`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"0bdc9c29-a335-44c4-856d-af46311606be"],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\file-paclet\\\\FileUtilities\\\\FileUtilities\"\>", 
+  "}"}]], "Output",
+ CellChangeTimes->{3.8949976238506627`*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"b1b40196-b3d7-4838-9dbf-74884bdbdf13"]
+}, Open  ]],
+
+Cell["\<\
+The paclet will now be visible to the system for the remainder of the current \
+session:\
+\>", "Text",
+ CellChangeTimes->{
+  3.8949976303638678`*^9},ExpressionUUID->"02d242a9-8baf-4bc2-8eea-\
+d96f053a6b4f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PacletFind", "[", "\"\<FileUtilities\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8949976311886115`*^9, 3.8949976365666523`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"4aee78e0-cd4d-4229-8477-bd85b4736519"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  InterpretationBox[
+   RowBox[{
+    TagBox["PacletObject",
+     "SummaryHead"], "[", 
+    DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+     TemplateBox[{
+       PaneSelectorBox[{False -> GridBox[{{
+             PaneBox[
+              ButtonBox[
+               DynamicBox[
+                FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+               ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+               BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+               "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+              Dynamic[{
+                Automatic, 
+                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}]], 
+             GraphicsBox[{
+               Thickness[0.0416667], {
+                FaceForm[{
+                  RGBColor[0.961, 0.961, 0.961], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.5454,
+                  22.5972}, {7.5464, 20.5002}, {2.5454, 18.4022}, {2.5454, 
+                 12.5982}, {2.5454, 12.5972}, {2.5454, 6.7952}, {7.5454, 
+                 4.6962}, {7.546, 4.6972}, {12.5454, 2.5992}, {17.5454, 
+                 4.6972}, {17.5454, 4.6962}, {22.5454, 6.7952}, {22.5454, 
+                 12.5972}, {22.5454, 12.5982}, {22.5454, 18.4022}}}]}, {
+                FaceForm[{
+                  RGBColor[0.898, 0.898, 0.898], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{17.125, 8.3359}, {17.125, 
+                 14.0569}, {16.875, 14.0569}, {16.875, 8.3359}, {17., 
+                 8.1169}, {21.952, 6.0399}, {22.049, 6.2709}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{7.125, 8.3359}, {7.125, 14.0569}, {
+                 6.875, 14.0569}, {6.875, 8.3359}, {1.952, 6.2709}, {2.048, 
+                 6.0399}, {7., 8.1169}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}}}, {{{11.8745, 6.2383}, {6.9515, 4.1733}, {7.0475, 
+                 3.9423}, {11.9995, 6.0193}, {16.9515, 3.9423}, {17.0475, 
+                 4.1733}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{17.125, 14.1392}, {17.125, 
+                 19.8602}, {16.875, 19.8602}, {16.875, 14.1392}, {17., 
+                 13.9202}, {21.952, 11.8432}, {22.049, 12.0742}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{7.125, 14.1392}, {7.125, 
+                 19.8602}, {6.875, 19.8602}, {6.875, 14.1392}, {1.952, 
+                 12.0742}, {2.048, 11.8432}, {7., 13.9202}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}}}, {{{11.8746, 21.3633}, {11.8746, 18.3563}, {
+                 11.9996, 18.3033}, {12.1246, 18.3563}, {12.1246, 21.3633}, {
+                 11.9996, 21.4153}}}]}, {
+                FaceForm[{
+                  RGBColor[0.749, 0.749, 0.749], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                  3}}}, {{{8.292, 19.8594}, {12., 21.4154}, {15.707, 
+                  19.8594}, {12., 18.3034}}, {{17.5, 19.5274}, {17.5, 
+                  20.1924}, {12., 22.5004}, {6.5, 20.1924}, {6.5, 19.5284}, {
+                  12., 17.2194}, {12., 17.2194}, {15.7, 18.7724}, {17.5, 
+                  19.5274}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}}}, {{{11.5, 8.5156}, {11.5, 6.4876}, {11.5, 
+                 5.4026}, {12.5, 5.8226}, {12.5, 8.5156}, {12., 8.3056}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1,
+                   0}, {0, 1, 0}}}, {{{21.5, 6.4873}, {17.5, 4.8083}, {17.5, 
+                  9.5283}, {21.5, 11.2073}}, {{21.5, 12.7113}, {21.5, 
+                  12.2913}, {17., 10.4033}, {16.5, 10.6133}, {16.5, 
+                  10.1943}, {15.707, 9.8613}, {16.5, 9.5283}, {16.5, 
+                  4.8083}, {16.5, 4.8093}, {16.5, 4.3903}, {15.707, 4.0573}, {
+                  17., 3.5143}, {22.5, 5.8223}, {22.5, 12.2913}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1,
+                   0}, {0, 1, 0}}}, {{{6.5, 4.8086}, {2.5, 6.4876}, {2.5, 
+                  11.2066}, {6.5, 9.5286}}, {{7.5, 9.1096}, {7.5, 9.1096}, {
+                  7.5, 9.5286}, {8.292, 9.8616}, {7.5, 10.1936}, {7.5, 
+                  10.6136}, {7., 10.4036}, {2.5, 12.2906}, {2.5, 12.7106}, {
+                  1.5, 12.2916}, {1.5, 5.8226}, {7., 3.5146}, {8.293, 
+                  4.0576}, {7.5, 4.3906}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}}}, {{{3.2925, 17.7622}, {7.0005, 
+                  19.3182}, {10.7075, 17.7622}, {7.0005, 16.2062}}, {{6.5005, 
+                  10.6122}, {2.5005, 12.2912}, {2.5005, 17.0102}, {6.5005, 
+                  15.3322}}, {{7.5005, 10.1932}, {7.5005, 10.6122}, {7.5005, 
+                  15.3322}, {12.0005, 17.2202}, {12.5005, 17.0102}, {12.5005, 
+                  18.0952}, {7.0005, 20.4032}, {1.5005, 18.0952}, {1.5005, 
+                  11.6262}, {7.0005, 9.3182}, {8.2935, 9.8612}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}}}, {{{21.5, 12.291}, {17.5, 10.612}, {
+                  17.5, 15.332}, {21.5, 17.01}}, {{13.293, 17.762}, {17., 
+                  19.318}, {20.708, 17.762}, {17., 16.207}}, {{17., 20.403}, {
+                  11.5, 18.095}, {11.5, 17.01}, {12., 17.22}, {16.5, 
+                  15.332}, {16.5, 10.612}, {16.5, 10.194}, {15.706, 9.861}, {
+                  17., 9.318}, {22.5, 11.626}, {22.5, 18.095}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}}}, {{{16.4995, 4.3906}, {12.4995, 
+                  2.7116}, {12.4995, 7.4316}, {16.4995, 9.1096}}, {{11.4995, 
+                  2.7116}, {7.4995, 4.3906}, {7.4995, 9.1096}, {11.4995, 
+                  7.4316}}, {{16.4995, 10.6136}, {16.4995, 10.1946}, {11.9995,
+                   8.3056}, {8.2915, 9.8616}, {7.4995, 10.1936}, {7.4995, 
+                  10.6146}, {6.4995, 10.1946}, {6.4995, 3.7256}, {11.9995, 
+                  1.4176}, {17.4995, 3.7256}, {17.4995, 10.1946}}}]}, {
+                FaceForm[{
+                  RGBColor[0.965, 0.765, 0.749], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}}}, {{{12., 17.6616}, {16.945, 15.5856}, {16.945, 
+                 9.9376}, {12., 7.8636}, {7.055, 9.9376}, {7.055, 
+                 15.5856}}}]}, {
+                FaceForm[{
+                  RGBColor[0.91, 0.655, 0.635], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.125, 
+                 17.7627}, {11.875, 17.7627}, {11.875, 12.0407}, {6.952, 
+                 9.9757}, {7.048, 9.7447}, {12., 11.8227}, {16.952, 9.7447}, {
+                 17.048, 9.9757}, {12.125, 12.0407}}}]}, {
+                FaceForm[{
+                  RGBColor[0.867, 0.067, 0.], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                  0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                  0}}}, {{{12.5, 8.5146}, {12.5, 13.2336}, {16.5, 14.9116}, {
+                  16.5, 10.1926}}, {{7.5, 14.9116}, {11.5, 13.2336}, {11.5, 
+                  8.5146}, {7.5, 10.1926}}, {{15.708, 15.6636}, {12., 
+                  14.1086}, {8.292, 15.6636}, {12., 17.2206}}, {{12., 
+                  18.3046}, {6.5, 15.9956}, {6.5, 9.5286}, {12., 7.2206}, {
+                  17.5, 9.5286}, {17.5, 15.9956}}}]}}, AspectRatio -> 
+              Automatic, ImageSize -> {24., 24.}, 
+              PlotRange -> {{0., 24.}, {0., 24.}}], 
+             GridBox[{{
+                RowBox[{
+                  TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["\"FileUtilities\"", "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["\"0.0.1\"", "SummaryItem"]}]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+              BaseStyle -> {
+               ShowStringCharacters -> False, NumberMarks -> False, 
+                PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+           AutoDelete -> False, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           BaselinePosition -> {1, 1}], True -> GridBox[{{
+             PaneBox[
+              ButtonBox[
+               DynamicBox[
+                FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+               ButtonFunction :> (Typeset`open$$ = False), Appearance -> None,
+                BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+               "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+              Dynamic[{
+                Automatic, 
+                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}]], 
+             GraphicsBox[{
+               Thickness[0.0416667], {
+                FaceForm[{
+                  RGBColor[0.961, 0.961, 0.961], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.5454,
+                  22.5972}, {7.5464, 20.5002}, {2.5454, 18.4022}, {2.5454, 
+                 12.5982}, {2.5454, 12.5972}, {2.5454, 6.7952}, {7.5454, 
+                 4.6962}, {7.546, 4.6972}, {12.5454, 2.5992}, {17.5454, 
+                 4.6972}, {17.5454, 4.6962}, {22.5454, 6.7952}, {22.5454, 
+                 12.5972}, {22.5454, 12.5982}, {22.5454, 18.4022}}}]}, {
+                FaceForm[{
+                  RGBColor[0.898, 0.898, 0.898], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{17.125, 8.3359}, {17.125, 
+                 14.0569}, {16.875, 14.0569}, {16.875, 8.3359}, {17., 
+                 8.1169}, {21.952, 6.0399}, {22.049, 6.2709}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{7.125, 8.3359}, {7.125, 14.0569}, {
+                 6.875, 14.0569}, {6.875, 8.3359}, {1.952, 6.2709}, {2.048, 
+                 6.0399}, {7., 8.1169}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}}}, {{{11.8745, 6.2383}, {6.9515, 4.1733}, {7.0475, 
+                 3.9423}, {11.9995, 6.0193}, {16.9515, 3.9423}, {17.0475, 
+                 4.1733}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{17.125, 14.1392}, {17.125, 
+                 19.8602}, {16.875, 19.8602}, {16.875, 14.1392}, {17., 
+                 13.9202}, {21.952, 11.8432}, {22.049, 12.0742}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{7.125, 14.1392}, {7.125, 
+                 19.8602}, {6.875, 19.8602}, {6.875, 14.1392}, {1.952, 
+                 12.0742}, {2.048, 11.8432}, {7., 13.9202}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}}}, {{{11.8746, 21.3633}, {11.8746, 18.3563}, {
+                 11.9996, 18.3033}, {12.1246, 18.3563}, {12.1246, 21.3633}, {
+                 11.9996, 21.4153}}}]}, {
+                FaceForm[{
+                  RGBColor[0.749, 0.749, 0.749], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                  3}}}, {{{8.292, 19.8594}, {12., 21.4154}, {15.707, 
+                  19.8594}, {12., 18.3034}}, {{17.5, 19.5274}, {17.5, 
+                  20.1924}, {12., 22.5004}, {6.5, 20.1924}, {6.5, 19.5284}, {
+                  12., 17.2194}, {12., 17.2194}, {15.7, 18.7724}, {17.5, 
+                  19.5274}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}}}, {{{11.5, 8.5156}, {11.5, 6.4876}, {11.5, 
+                 5.4026}, {12.5, 5.8226}, {12.5, 8.5156}, {12., 8.3056}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1,
+                   0}, {0, 1, 0}}}, {{{21.5, 6.4873}, {17.5, 4.8083}, {17.5, 
+                  9.5283}, {21.5, 11.2073}}, {{21.5, 12.7113}, {21.5, 
+                  12.2913}, {17., 10.4033}, {16.5, 10.6133}, {16.5, 
+                  10.1943}, {15.707, 9.8613}, {16.5, 9.5283}, {16.5, 
+                  4.8083}, {16.5, 4.8093}, {16.5, 4.3903}, {15.707, 4.0573}, {
+                  17., 3.5143}, {22.5, 5.8223}, {22.5, 12.2913}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1,
+                   0}, {0, 1, 0}}}, {{{6.5, 4.8086}, {2.5, 6.4876}, {2.5, 
+                  11.2066}, {6.5, 9.5286}}, {{7.5, 9.1096}, {7.5, 9.1096}, {
+                  7.5, 9.5286}, {8.292, 9.8616}, {7.5, 10.1936}, {7.5, 
+                  10.6136}, {7., 10.4036}, {2.5, 12.2906}, {2.5, 12.7106}, {
+                  1.5, 12.2916}, {1.5, 5.8226}, {7., 3.5146}, {8.293, 
+                  4.0576}, {7.5, 4.3906}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}}}, {{{3.2925, 17.7622}, {7.0005, 
+                  19.3182}, {10.7075, 17.7622}, {7.0005, 16.2062}}, {{6.5005, 
+                  10.6122}, {2.5005, 12.2912}, {2.5005, 17.0102}, {6.5005, 
+                  15.3322}}, {{7.5005, 10.1932}, {7.5005, 10.6122}, {7.5005, 
+                  15.3322}, {12.0005, 17.2202}, {12.5005, 17.0102}, {12.5005, 
+                  18.0952}, {7.0005, 20.4032}, {1.5005, 18.0952}, {1.5005, 
+                  11.6262}, {7.0005, 9.3182}, {8.2935, 9.8612}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}}}, {{{21.5, 12.291}, {17.5, 10.612}, {
+                  17.5, 15.332}, {21.5, 17.01}}, {{13.293, 17.762}, {17., 
+                  19.318}, {20.708, 17.762}, {17., 16.207}}, {{17., 20.403}, {
+                  11.5, 18.095}, {11.5, 17.01}, {12., 17.22}, {16.5, 
+                  15.332}, {16.5, 10.612}, {16.5, 10.194}, {15.706, 9.861}, {
+                  17., 9.318}, {22.5, 11.626}, {22.5, 18.095}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                  0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                  0, 1, 0}, {0, 1, 0}}}, {{{16.4995, 4.3906}, {12.4995, 
+                  2.7116}, {12.4995, 7.4316}, {16.4995, 9.1096}}, {{11.4995, 
+                  2.7116}, {7.4995, 4.3906}, {7.4995, 9.1096}, {11.4995, 
+                  7.4316}}, {{16.4995, 10.6136}, {16.4995, 10.1946}, {11.9995,
+                   8.3056}, {8.2915, 9.8616}, {7.4995, 10.1936}, {7.4995, 
+                  10.6146}, {6.4995, 10.1946}, {6.4995, 3.7256}, {11.9995, 
+                  1.4176}, {17.4995, 3.7256}, {17.4995, 10.1946}}}]}, {
+                FaceForm[{
+                  RGBColor[0.965, 0.765, 0.749], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}}}, {{{12., 17.6616}, {16.945, 15.5856}, {16.945, 
+                 9.9376}, {12., 7.8636}, {7.055, 9.9376}, {7.055, 
+                 15.5856}}}]}, {
+                FaceForm[{
+                  RGBColor[0.91, 0.655, 0.635], 
+                  Opacity[1.]}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.125, 
+                 17.7627}, {11.875, 17.7627}, {11.875, 12.0407}, {6.952, 
+                 9.9757}, {7.048, 9.7447}, {12., 11.8227}, {16.952, 9.7447}, {
+                 17.048, 9.9757}, {12.125, 12.0407}}}]}, {
+                FaceForm[{
+                  RGBColor[0.867, 0.067, 0.], 
+                  Opacity[1.]}], 
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                  0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                  0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                  0}}}, {{{12.5, 8.5146}, {12.5, 13.2336}, {16.5, 14.9116}, {
+                  16.5, 10.1926}}, {{7.5, 14.9116}, {11.5, 13.2336}, {11.5, 
+                  8.5146}, {7.5, 10.1926}}, {{15.708, 15.6636}, {12., 
+                  14.1086}, {8.292, 15.6636}, {12., 17.2206}}, {{12., 
+                  18.3046}, {6.5, 15.9956}, {6.5, 9.5286}, {12., 7.2206}, {
+                  17.5, 9.5286}, {17.5, 15.9956}}}]}}, AspectRatio -> 
+              Automatic, ImageSize -> {24., 24.}, 
+              PlotRange -> {{0., 24.}, {0., 24.}}], 
+             GridBox[{{
+                RowBox[{
+                  TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["\"FileUtilities\"", "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["\"0.0.1\"", "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Location: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                  "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall University\\\
+\\GitHub\\\\file-paclet\\\\FileUtilities\\\\FileUtilities\"", 
+                   "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Description: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                   TagBox[
+                    RowBox[{"Missing", "[", "\"NotAvailable\"", "]"}], Short],
+                    "SummaryItem"]}]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+              BaseStyle -> {
+               ShowStringCharacters -> False, NumberMarks -> False, 
+                PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+           AutoDelete -> False, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           BaselinePosition -> {1, 1}]}, 
+        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+      "SummaryPanel"],
+     DynamicModuleValues:>{}], "]"}],
+   PacletObject[<|
+    "Name" -> "FileUtilities", "Version" -> "0.0.1", "WolframVersion" -> 
+     "13.3+", "Extensions" -> {{
+       "Kernel", "Root" -> "Kernel", "Context" -> "FileUtilities`"}, {
+       "Documentation", "Language" -> "English"}}, "Location" -> 
+     "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\GitHub\\file-paclet\\FileUtilities\\FileUtilities"|>],
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "}"}]], "Output",
+ CellChangeTimes->{3.894997637505746*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"9713f315-36aa-48c8-bd0e-d2f9b03cd99d"]
+}, Open  ]],
+
+Cell["Load your package\[CloseCurlyQuote]s code by evaluating:", "Text",
+ CellChangeTimes->{
+  3.8949976501031528`*^9},ExpressionUUID->"b59122bc-0aa3-4d18-8f67-\
+538da9f11b7d"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<FileUtilities`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8949976515181904`*^9, 3.8949976566216035`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"81e4eddc-a23d-4676-94a7-2b313811f500"],
+
+Cell["Symbols from the MyPaclet` context can now be used:", "Text",
+ CellChangeTimes->{
+  3.894997663602204*^9},ExpressionUUID->"a409e0d2-1ea0-4f0c-aaf2-\
+6a2fcefa87c1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SayHello", "[", "$Username", "]"}]], "Input",
+ CellChangeTimes->{{3.8949976649308677`*^9, 3.8949976737743454`*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"d0dd8c1c-22f0-4330-ad63-77c6c73c0c26"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Hello \"\>", "\[InvisibleSpace]", "\<\"Peter\"\>", 
+   "\[InvisibleSpace]", "\<\"!\"\>"}],
+  SequenceForm["Hello ", "Peter", "!"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.8949976740662527`*^9},
+ CellLabel->
+  "During evaluation of \
+In[20]:=",ExpressionUUID->"6897f3b7-6043-4138-bcac-29fe91e475f7"]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (May 18, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e05181f1-e424-4353-aa5f-2456fe4d9ac3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 164, 3, 35, "Text",ExpressionUUID->"caf1dbf4-ba4d-45eb-b4de-c68c1cc9709c"],
+Cell[CellGroupData[{
+Cell[747, 27, 319, 5, 67, "Input",ExpressionUUID->"e44e9612-5d9d-4505-961d-a9d97e14eeee"],
+Cell[1069, 34, 255, 3, 52, "Output",ExpressionUUID->"10b05db0-76f4-4b5f-8ee9-0a624c8d24ee"]
+}, Open  ]],
+Cell[1339, 40, 156, 3, 35, "Text",ExpressionUUID->"d15f9f8f-3f11-46ae-82a7-58edebb72f0a"],
+Cell[CellGroupData[{
+Cell[1520, 47, 203, 3, 28, "Input",ExpressionUUID->"4f6f0c47-cd92-4516-b089-d861e69e8ffc"],
+Cell[1726, 52, 255, 3, 52, "Output",ExpressionUUID->"675dd146-c338-4d98-86b8-0cde22253a2e"]
+}, Open  ]],
+Cell[1996, 58, 160, 3, 35, "Text",ExpressionUUID->"65c9d3e1-9f78-4da8-b46f-1a9a162fe194"],
+Cell[CellGroupData[{
+Cell[2181, 65, 231, 4, 28, "Input",ExpressionUUID->"2d817b30-60c3-4c04-b89c-866e1df1bbef"],
+Cell[2415, 71, 320, 7, 68, "Output",ExpressionUUID->"3801560b-d704-4ae7-8c86-4e012fa4fae9"]
+}, Open  ]],
+Cell[2750, 81, 179, 3, 35, "Text",ExpressionUUID->"a9d0a9fb-486b-4b05-b65c-a69cc11f3571"],
+Cell[CellGroupData[{
+Cell[2954, 88, 272, 5, 28, "Input",ExpressionUUID->"c454856c-8a5b-4f27-8139-771c5c141f1d"],
+Cell[3229, 95, 18606, 415, 537, "Output",ExpressionUUID->"b5cc2b7b-01cd-436e-b97a-5708e39b8fbc"]
+}, Open  ]],
+Cell[21850, 513, 301, 7, 81, "Text",ExpressionUUID->"d73bb166-d4af-483d-b49c-7164fc0b004a"],
+Cell[22154, 522, 221, 3, 28, "Input",ExpressionUUID->"3db11e88-f62e-4fbb-91b1-f38a89dbb32e"],
+Cell[CellGroupData[{
+Cell[22400, 529, 363, 7, 28, "Input",ExpressionUUID->"cf02a4ae-6464-4397-95d8-13cf9767b3c6"],
+Cell[22766, 538, 22437, 394, 62, "Output",ExpressionUUID->"c5ba4a27-78b5-49a0-ad58-63086dc6b62f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45240, 937, 212, 3, 28, "Input",ExpressionUUID->"60cc635f-7913-4581-a7af-5130da1a75a4"],
+Cell[45455, 942, 6586, 161, 207, "Output",ExpressionUUID->"3ae36cb7-92bb-4c5c-ae93-09f0dafd218f"]
+}, Open  ]],
+Cell[52056, 1106, 258, 6, 58, "Text",ExpressionUUID->"44dff4bb-912d-4ac1-8fac-c3f1e5e3910d"],
+Cell[52317, 1114, 252, 4, 28, "Input",ExpressionUUID->"b4595bb9-645e-4aaf-9a01-1c3de12f73a7"],
+Cell[52572, 1120, 241, 6, 58, "Text",ExpressionUUID->"0f3714e5-fd96-43f2-b71e-ff91c3b07da7"],
+Cell[CellGroupData[{
+Cell[52838, 1130, 230, 3, 28, "Input",ExpressionUUID->"f6d3a75c-70bd-465a-b565-26ad4a625b7d"],
+Cell[53071, 1135, 191, 3, 32, "Output",ExpressionUUID->"5200f8eb-2ea3-4099-b4d3-d297bf7260ae"]
+}, Open  ]],
+Cell[53277, 1141, 329, 7, 81, "Text",ExpressionUUID->"4cfb8370-63f0-488e-aa7d-94511f20b496"],
+Cell[CellGroupData[{
+Cell[53631, 1152, 266, 4, 28, "Input",ExpressionUUID->"0bdc9c29-a335-44c4-856d-af46311606be"],
+Cell[53900, 1158, 298, 5, 52, "Output",ExpressionUUID->"b1b40196-b3d7-4838-9dbf-74884bdbdf13"]
+}, Open  ]],
+Cell[54213, 1166, 216, 6, 58, "Text",ExpressionUUID->"02d242a9-8baf-4bc2-8eea-d96f053a6b4f"],
+Cell[CellGroupData[{
+Cell[54454, 1176, 232, 3, 28, "Input",ExpressionUUID->"4aee78e0-cd4d-4229-8477-bd85b4736519"],
+Cell[54689, 1181, 22836, 396, 62, "Output",ExpressionUUID->"9713f315-36aa-48c8-bd0e-d2f9b03cd99d"]
+}, Open  ]],
+Cell[77540, 1580, 176, 3, 35, "Text",ExpressionUUID->"b59122bc-0aa3-4d18-8f67-538da9f11b7d"],
+Cell[77719, 1585, 228, 3, 28, "Input",ExpressionUUID->"81e4eddc-a23d-4676-94a7-2b313811f500"],
+Cell[77950, 1590, 169, 3, 35, "Text",ExpressionUUID->"a409e0d2-1ea0-4f0c-aaf2-6a2fcefa87c1"],
+Cell[CellGroupData[{
+Cell[78144, 1597, 218, 3, 28, "Input",ExpressionUUID->"d0dd8c1c-22f0-4330-ad63-77c6c73c0c26"],
+Cell[78365, 1602, 358, 9, 22, "Print",ExpressionUUID->"6897f3b7-6043-4138-bcac-29fe91e475f7"]
+}, Open  ]]
+}
+]
+*)
+
