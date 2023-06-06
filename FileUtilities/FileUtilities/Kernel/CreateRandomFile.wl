@@ -1,8 +1,10 @@
+(* ::Package:: *)
+
 BeginPackage["PeterBurbery`FileUtilities`"]
 
 (* Declare your package's public symbols here. *)
 
-SayHello
+CreateRandomFile
 
 Begin["`Private`"]
 
@@ -234,7 +236,7 @@ throwFailure[ tag_String, params___ ] :=
     throwInternalFailure // endDefinition;
 
     $bugReportLink := $bugReportLink = Hyperlink[
-    "Report this issue »",
+    "Report this issue \[RightGuillemet]",
     URLBuild @ <|
         "Scheme"   -> "https",
         "Domain"   -> "resources.wolframcloud.com",
