@@ -2,13 +2,15 @@ BeginPackage["PeterBurbery`FileUtilities`"]
 
 (* Declare your package's public symbols here. *)
 
-SayHello
+DirectorySize
 
 Begin["`Private`"]
 
 (* Define your public and private symbols here. *)
 
-SayHello[name_?StringQ] := Print["Hello ", name, "!"]
+DirectorySize[] := DirectorySize[Directory[]];
+DirectorySize[dir_ /; DirectoryQ[dir]] := 
+ Quantity[Internal`DirectoryByteCount[dir], "Bytes"]
 End[] (* End `Private` *)
 
 EndPackage[]

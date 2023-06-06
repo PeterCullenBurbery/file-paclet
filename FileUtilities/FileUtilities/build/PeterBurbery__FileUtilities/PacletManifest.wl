@@ -11,7 +11,7 @@
             ,
             "Hash"
             ->
-            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+            "84f8c408582f4f07b26ea14d1c87602d984ac02c60a7576b261c2ccd4b716734"
                 
         |>
         ,
@@ -24,7 +24,20 @@
             ,
             "Hash"
             ->
-            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+            "5d2e85fee9d5b40dd028cefffdfafa522cb7ff1b31a3bc048cb33a4ef4b39447"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\DirectorySize.wl"
+            ]
+            ,
+            "Hash"
+            ->
+            "04fafc00d9537d8c1e379341472dcc3fe917d17ce4313002e808a7395f07d4c9"
                 
         |>
         ,
@@ -37,7 +50,7 @@
             ,
             "Hash"
             ->
-            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+            "60b6803dd998f6528553af4f2aefe8fa43b3309168831c55838b4106dc563f6a"
                 
         |>
         ,
@@ -63,7 +76,7 @@
             ,
             "Hash"
             ->
-            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+            "cf8bea296bb5622009464e4a22e5324bee255824a3c6de03e8d175d708b2ac18"
                 
         |>
         ,
@@ -76,7 +89,7 @@
             ,
             "Hash"
             ->
-            "b21186ab8301eef0e20f2c3521082e765922b83989071cb0d08b1769d2cada8d"
+            "06d2a5d9193d7c6bd8c47a522f3382ebb91ba7dfb5809a40c3e4624eff560577"
                 
         |>
         ,
@@ -84,12 +97,12 @@
             "File"
             ->
             File[
-                "Kernel\\ImageRead"
+                "Kernel\\ImageRead.wl"
             ]
             ,
             "Hash"
             ->
-            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+            "c96a3ed613934b1a14dcadfecc8dd5d70dea7e1ba62c88cc4f1e512ead6673a1"
                 
         |>
         ,
@@ -97,12 +110,12 @@
             "File"
             ->
             File[
-                "Kernel\\ReadPNG"
+                "Kernel\\ReadPNG.wl"
             ]
             ,
             "Hash"
             ->
-            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+            "d59441457fb99ae3aad0d2218d1b148e74942d07ca9d41bcad41cac1a4224c07"
                 
         |>
         ,
@@ -110,12 +123,12 @@
             "File"
             ->
             File[
-                "Kernel\\RelativePath"
+                "Kernel\\RelativePath.wl"
             ]
             ,
             "Hash"
             ->
-            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+            "7727b2d319e9a1ee066f809e0083c6c499ae05151bdac576599e9955853c6806"
                 
         |>
         ,
