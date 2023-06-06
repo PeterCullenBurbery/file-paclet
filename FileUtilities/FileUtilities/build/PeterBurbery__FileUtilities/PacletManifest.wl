@@ -1,0 +1,149 @@
+<|
+    "Files"
+    ->
+    {
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\BackupFile.wl"
+            ]
+            ,
+            "Hash"
+            ->
+            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\CreateRandomFile.wl"
+            ]
+            ,
+            "Hash"
+            ->
+            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\FileNameEdit.wl"
+            ]
+            ,
+            "Hash"
+            ->
+            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\FileQ.wl"
+            ]
+            ,
+            "Hash"
+            ->
+            "574d54425131db8c7cef8d527a3e5903a3f11040b9dd8189db5c3a1ce6743278"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\FileTreePicker.wl"
+            ]
+            ,
+            "Hash"
+            ->
+            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\FileUtilities.wl"
+            ]
+            ,
+            "Hash"
+            ->
+            "b21186ab8301eef0e20f2c3521082e765922b83989071cb0d08b1769d2cada8d"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\ImageRead"
+            ]
+            ,
+            "Hash"
+            ->
+            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\ReadPNG"
+            ]
+            ,
+            "Hash"
+            ->
+            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\RelativePath"
+            ]
+            ,
+            "Hash"
+            ->
+            "287916d90c58430a9b9c88b18108325f6b1c8441e53b1ff0e5eea835aa51a318"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\Guides\\FileUtilities.nb"
+            ]
+            ,
+            "Hash"
+            ->
+            "5031cd21b7968dced555ebde2d90346ceacc76fc5815fd2cab23b9c8c3899863"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\SayHello.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "3ff376ec6d85f2daae853dc9bd86a44d21727fb992995d540fa1b7139d46404a"
+                
+        |>
+    }
+|>

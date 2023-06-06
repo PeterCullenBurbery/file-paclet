@@ -1,0 +1,185 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7014,        175]
+NotebookOptionsPosition[      4840,        126]
+NotebookOutlinePosition[      6447,        166]
+CellTagsIndexPosition[      6404,        163]
+WindowTitle->File Utilities
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "PETER BURBERY/ FILE UTILITIES GUIDE", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "004edd26-410c-4c23-b3cf-0dc22dfbd5b4"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "1ad57cea-1ea3-45cc-bc82-715bcb021066"],
+        Background->RGBColor[0.85098, 0.396078, 0],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "d0e17d26-0848-4274-b3e6-4cf90092cee8"]
+        }],ExpressionUUID->"cc03339b-44b9-411b-8adb-2c5dbde1adb5"],
+        StripOnInput->False],{
+       "\"PeterBurbery/FileUtilities/guide/FileUtilities\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PeterBurbery/FileUtilities/guide/FileUtilities"]},
+               Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PeterBurbery/\
+FileUtilities/guide/FileUtilities.html"], StandardForm]], "Input", 
+                TextClipboardType -> "PlainText"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$64422], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PeterBurbery/FileUtilities/guide/FileUtilities" <> ".html"], 
+             None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "ed0e2e5a-7e2e-4e6e-988f-7d644bfd5efd"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "1c22f7dd-35d6-4cad-a689-68337399e1ca"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"9e28be7b-7d2b-40dc-85ff-3fdfaa5f3681"],
+
+Cell[CellGroupData[{
+
+Cell["File Utilities", "GuideTitle",
+ CellID->216370,ExpressionUUID->"d0402b59-2a3f-4de3-87cc-c77af13a1f3d"],
+
+Cell["\[NonBreakingSpace]", "GuideAbstract",
+ CellID->26098162,ExpressionUUID->"569cca12-d615-452c-a04a-951995d60a55"],
+
+Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"6e00ac5c-85f1-4061-8909-be0026fc205f"],
+
+Cell[TextData[Cell["\<\
+
+FrameBox[\"\\\"XXXX\\\"\"]\
+\>", "FunctionPlaceholder", \
+"InlineFunctionSansUnlinked",ExpressionUUID->"1c1a9f58-a3c1-428b-8f5f-\
+05946162f6db"]], "InlineGuideFunctionListing",
+ CellID->697796579,ExpressionUUID->"4fcd28c8-bc90-43d3-989a-97790bc99aaa"],
+
+Cell[BoxData[
+ ExpressionUUID -> "eba991eb-f6a6-4ffd-9c2c-208c6a052151"], "Input",Expression\
+UUID->"3270e4b7-eda4-4600-9164-c2f40a5df036"]
+}, Open  ]]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 604.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"File Utilities",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> {$Failed, ""}, "ShowCitation" -> 
+  False, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2023, 6, 5, 20, 22, 2.5990691}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "PeterBurbery`FileUtilities`", "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Peter Burbery/ File Utilities Guide", "language" -> "en", "paclet" -> 
+    "PeterBurbery/FileUtilities", "status" -> "None", "summary" -> "", 
+    "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$64392, "title" -> 
+    "File Utilities", "titlemodifier" -> "", "metadescription" -> "", 
+    "windowtitle" -> "File Utilities", "type" -> "Guide", "uri" -> 
+    "PeterBurbery/FileUtilities/guide/FileUtilities"}},
+CacheGraphics->False,
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (May 18, 2023)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"73e1b528-1bea-459a-8389-e8e3706a4c03"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[586, 21, 3467, 80, 70, "AnchorBarGrid",ExpressionUUID->"9e28be7b-7d2b-40dc-85ff-3fdfaa5f3681",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[4078, 105, 108, 1, 70, "GuideTitle",ExpressionUUID->"d0402b59-2a3f-4de3-87cc-c77af13a1f3d",
+ CellID->216370],
+Cell[4189, 108, 118, 1, 70, "GuideAbstract",ExpressionUUID->"569cca12-d615-452c-a04a-951995d60a55",
+ CellID->26098162],
+Cell[4310, 111, 93, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"6e00ac5c-85f1-4061-8909-be0026fc205f"],
+Cell[4406, 113, 276, 6, 70, InheritFromParent,ExpressionUUID->"4fcd28c8-bc90-43d3-989a-97790bc99aaa",
+ CellID->697796579],
+Cell[4685, 121, 139, 2, 70, "Input",ExpressionUUID->"3270e4b7-eda4-4600-9164-c2f40a5df036"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
