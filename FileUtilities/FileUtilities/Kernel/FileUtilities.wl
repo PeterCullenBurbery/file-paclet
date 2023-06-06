@@ -1,16 +1,8 @@
-BeginPackage["FileUtilities`"]
-
-(* Declare your package's public symbols here. *)
-
-SayHello
-
-Begin["`Private`"]
-
-(* Define your public and private symbols here. *)
-
-SayHello[name_?StringQ] := Print["Hello ", name, "!"]
+(* ::Package:: *)
 
 
-End[] (* End `Private` *)
+{"<<PeterBurbery`FileUtilities`FileQ`","<<PeterBurbery`FileUtilities`BackupFile`","<<PeterBurbery`FileUtilities`FileNameEdit`","<<PeterBurbery`FileUtilities`FileTreePicker`","<<PeterBurbery`FileUtilities`CreateRandomFile`","<<PeterBurbery`FileUtilities`RelativePath`","<<PeterBurbery`FileUtilities`ImageRead`","<<PeterBurbery`FileUtilities`ReadPNG`"}
 
-EndPackage[]
+
+(* ::Input:: *)
+(**)
